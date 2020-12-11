@@ -1,0 +1,98 @@
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.signup .container {
+    width: 320px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 3px 6px 0px #000000;
+    border-radius: 5px;
+}
+
+.signup .container h3 {
+    text-align: center;
+    height: 0px;
+}
+
+.signup .container .signup_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 20px; */
+    height: 80%;
+}
+
+.signup .container .signup_form .inputbox {
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    width: 240px;
+    margin: 10px 0;
+}
+
+.signup .container .signup_form .inputbox1 {
+    position: absolute;
+    top: 30px;
+}
+
+.signup .container .signup_form .inputbox2 {
+    position: absolute;
+    top: 70px;
+}
+
+.signup .container .signup_form .inputbox3 {
+    position: absolute;
+    top: 110px;
+}
+
+.signup .container .signup_form .inputbox4 {
+    position: absolute;
+    top: 150px;
+}
+
+
+.signup .container .signup_form .inputbox input {
+    background: none transparent;
+    border: none;
+    padding-left: 5px;
+    border-bottom: 2px solid var(--text);
+    outline: none;
+    z-index: 10;
+}
+
+.signup .container .signup_form .inputbox label {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    top: -22px;
+    z-index: 1;
+    padding-left: 5px;
+}
+
+.signup .container .signup_form .inputbox input:focus ~ label,
+.signup .container .signup_form .inputbox input:valid ~ label {
+    top: -35px;
+    font-size: 10px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.signup .container .signup_form button {
+    position: absolute;
+    bottom: 30px;
+    width: 230px;
+    height: 30px;
+    margin: 0px 45px;
+}
+
+.signup .container a {
+    text-align: center;
+    margin-top: -15px;
+    z-index: 10;
+}

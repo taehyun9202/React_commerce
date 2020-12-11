@@ -1,0 +1,106 @@
+.header {
+    background-color: var(--color1);
+    height: 110px;
+}
+
+.header .logo {
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.header .logo .logo_left {
+    position: absolute;
+    left: 20px;
+}
+
+.header .logo .logo_middle .title {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header .logo .logo_middle .title a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.header .logo .logo_right {
+    position: absolute;
+    right: 20px;
+}
+
+.header .logo .logo_right .icon {
+    color: black;
+}
+
+.header .logo .logo_right .icon_user {
+    position: absolute;
+    right: 50px;
+}
+
+.header .logo .logo_right .item_number {
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    font-weight: 600;
+    color: black;
+    width: 18px;
+    height: 18px;
+    font-size: small;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.header .search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.header .active .searchbar {
+    transition: 0.5s;
+}
+
+.header .active input {
+    border: none;
+    border-bottom: 2px solid var(--text);
+    width: 160px;
+    outline: none;
+    background-color: var(--color1);
+    animation: animate 0.2s  ease-in forwards;
+}
+
+@keyframes animate {
+    from { 
+        opacity: 0;
+        width: 0px; 
+    }
+    to {
+        opacity: 1;
+        width: 130px; 
+    }
+}
+
+.header .categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .categories a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--text);
+}
+
+.header .categories a:hover {
+    border-bottom: solid 2px var(--text);
+    font-weight: 500;
+}
